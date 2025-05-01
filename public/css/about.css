@@ -1,0 +1,60 @@
+.about-us h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.about-us h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.2rem;
+}
+
+.about-us {
+    padding: 1rem;
+}
+
+@media (min-width: 768px) {
+    .about-us {
+        padding: 2rem 3rem;
+    }
+}
+
+.about-us-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-us-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+    .about-us-container {
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+    }
+
+    .about-us h2 {
+        color: #90caf9;
+    }
+}
+
+.about-us h2::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 24px;
+    background-color: #2563eb;
+    margin-right: 12px;
+    border-radius: 2px;
+} 
